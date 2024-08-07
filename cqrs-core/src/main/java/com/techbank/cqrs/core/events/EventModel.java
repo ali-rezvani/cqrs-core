@@ -15,7 +15,7 @@ public class EventModel {
     @Id
     private UUID id;
     private Instant timestamp;
-    private String aggregateIdentifier;
+    private UUID aggregateIdentifier;
     private String aggregateType;
     private int version;
     private String eventType;

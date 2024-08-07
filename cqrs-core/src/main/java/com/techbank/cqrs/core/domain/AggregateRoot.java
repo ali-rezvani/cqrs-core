@@ -1,6 +1,7 @@
 package com.techbank.cqrs.core.domain;
 
 import com.techbank.cqrs.core.events.BaseEvent;
+import lombok.Data;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Slf4j
+@Data
 public abstract class AggregateRoot {
     @Getter
     protected UUID id;
